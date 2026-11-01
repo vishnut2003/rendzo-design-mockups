@@ -312,7 +312,18 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 /* full-bleed photo */
 .hero-bg { position: absolute; inset: 0; z-index: 0; }
-.hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 70% center; transform: scale(1.02); }
+.hero-bg img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: 70% center;
+  transform: scale(1.02);
+  opacity: 0;
+  transition: opacity .9s ease;
+}
+.hero-bg img.on { opacity: 1; }
+.hero-text { display: flex; flex-direction: column; gap: 18px; transition: opacity .35s ease, transform .35s ease; }
+@media (min-width: 900px) { .hero-text { gap: 14px; } }
+.hero-text.fade { opacity: 0; transform: translateY(8px); }
 /* overlays: dark teal from the left, soft darkening at the bottom */
 .hero-bg::after {
   content: "";
