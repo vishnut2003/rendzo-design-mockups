@@ -101,29 +101,35 @@ Pages 1–4 are the priority; they are what the client will judge the design on.
 - Placeholder images: use neutral product-style placeholders (picsum/unsplash-style URLs or local SVG placeholders). Do not hotlink rentomojo.com or p.rmjo.in images.
 - Dummy product data: furniture and appliances typical for Kochi rentals (sofas, beds, mattresses, fridges, washing machines, ACs, water purifiers, laptops), realistic ₹ monthly rents (₹136–₹2,499/mo) and deposits.
 
-## Suggested layout
+## Folder layout
+
+Every page design lives in its own **versioned folder** and is fully self-contained: all CSS, JS and images for that page sit inside the same version folder, so a single folder can be zipped and sent to the client. A client revision becomes the next version (`v2`, `v3`, ...). Do not share assets across page folders; copy them.
 
 ```
 /
 ├── CLAUDE.md
-├── project-details/          # client brief + quotation (do not edit)
-├── index.html                # Home
-├── category.html             # Product catalogue / listing
-├── product.html              # Product details
-├── cart.html                 # Cart & checkout
-├── login.html
-├── account.html              # Customer dashboard + bookings
-├── owner-register.html
-├── owner-submit-product.html
-├── about.html
-├── contact.html
-├── faq.html
-├── policy.html               # one template for T&C / Privacy / Cancellation / Refund
-└── assets/
-    ├── css/styles.css
-    ├── js/main.js            # menu toggle, carousel, accordion, tabs only
-    └── img/                  # logo placeholder, icons, placeholder photos
+├── project-details/            # client brief + quotation (do not edit)
+├── home/
+│   └── v1/
+│       ├── index.html
+│       └── assets/
+│           ├── css/styles.css
+│           ├── js/main.js      # menu toggle, carousel, accordion, tabs only
+│           └── img/            # logo placeholder, icons, local images
+├── category/v1/...             # Product catalogue / listing
+├── product/v1/...              # Product details
+├── cart/v1/...                 # Cart & checkout
+├── login/v1/...
+├── account/v1/...              # Customer dashboard + bookings
+├── owner-register/v1/...
+├── owner-submit-product/v1/...
+├── about/v1/...
+├── contact/v1/...
+├── faq/v1/...
+└── policy/v1/...               # one template for T&C / Privacy / Cancellation / Refund
 ```
+
+Inside each version folder the entry file is `index.html` and asset paths are relative (`assets/css/styles.css`). Cross-page links use `#` until the client picks the final set of pages.
 
 ## Working conventions
 

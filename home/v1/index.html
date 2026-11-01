@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RENDZO – Rent Furniture, Appliances & Electronics in Kochi</title>
+  <meta name="description" content="Everything You Need. Nothing to Own. Rent furniture, appliances and electronics in Kochi with free delivery, pickup and 100% refundable deposit.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- SVG icon sprite -->
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.73.98 1-3.64-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.9 9.88zm8.42-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .17 5.33.16 11.89c0 2.1.55 4.14 1.59 5.95L0 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.33 11.89-11.89 0-3.18-1.24-6.16-3.49-8.41z"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></symbol>
+  <symbol id="i-li" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-apple" viewBox="0 0 24 24" fill="currentColor"><path d="M16.37 12.72c-.02-2.3 1.88-3.4 1.96-3.45-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3-.79-1.55.02-2.97.9-3.77 2.28-1.61 2.79-.41 6.92 1.16 9.18.77 1.11 1.68 2.35 2.88 2.31 1.16-.05 1.6-.75 3-.75s1.79.75 3.01.72c1.24-.02 2.03-1.13 2.79-2.24.88-1.29 1.24-2.53 1.26-2.6-.03-.01-2.42-.93-2.44-3.69zM14.08 5.98c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.78-.97 2.83 1.03.08 2.07-.52 2.71-1.29z"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M3 2.5v19l10.5-9.5L3 2.5zm12.2 7.9L5.9 3.3l12.2 7.1-2.9 2.9-2.9-2.9zm0 3.2l2.9 2.9-12.2 7.1 9.3-10z"/></symbol>
+</svg>
+
+<!-- Header -->
+<header class="header">
+  <div class="container header-inner">
+    <button class="icon-btn hamburger" data-open-drawer aria-label="Open menu"><svg width="24" height="24"><use href="#i-menu"/></svg></button>
+
+    <a class="logo" href="#"><span class="logo-mark">R</span><span class="logo-name">RENDZO</span></a>
+
+    <a class="city" href="#"><svg width="15" height="15"><use href="#i-pin"/></svg> Kochi <svg width="13" height="13"><use href="#i-chev"/></svg></a>
+
+    <div class="search"><svg width="18" height="18"><use href="#i-search"/></svg> Search products</div>
+
+    <nav class="nav">
+      <a href="#" style="color:var(--brand)">List Your Product</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="icon-btn" href="#"><svg width="20" height="20"><use href="#i-user"/></svg><span class="label">Login / Signup</span></a>
+      <a class="icon-btn" href="#" aria-label="Cart"><svg width="20" height="20"><use href="#i-cart"/></svg><span class="badge-count">2</span></a>
+    </div>
+  </div>
+
+  <div class="catbar">
+    <div class="container">
+      <ul>
+        <li><a class="active" href="#"><svg width="14" height="14"><use href="#i-grid"/></svg> All Categories</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Furniture</a></li>
+        <li><a href="#">Appliances</a></li>
+        <li><a href="#">Electronics</a></li>
+        <li><a href="#">Baby &amp; Kids</a></li>
+        <li><a href="#">Fitness</a></li>
+        <li><a href="#">Others</a></li>
+        <li style="margin-left:auto"><a href="#"><svg width="14" height="14"><use href="#i-tag"/></svg> Offers</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="search-mobile">
+  <div class="search"><svg width="18" height="18"><use href="#i-search"/></svg> Search products</div>
+</div>
+
+<!-- Mobile drawer -->
+<div class="drawer" id="drawer">
+  <div class="drawer-backdrop" data-close-drawer></div>
+  <div class="drawer-panel">
+    <button class="icon-btn drawer-close" data-close-drawer aria-label="Close menu"><svg width="22" height="22"><use href="#i-x"/></svg></button>
+    <a class="logo" href="#"><span class="logo-mark">R</span><span class="logo-name">RENDZO</span></a>
+    <a class="btn btn-primary" href="#" style="width:100%">Login / Signup</a>
+    <h4>Categories</h4>
+    <a class="item" href="#">Packages</a>
+    <a class="item" href="#">Furniture</a>
+    <a class="item" href="#">Appliances</a>
+    <a class="item" href="#">Electronics</a>
+    <a class="item" href="#">Baby &amp; Kids</a>
+    <a class="item" href="#">Fitness</a>
+    <a class="item" href="#">Others</a>
+    <h4>More</h4>
+    <a class="item" href="#">Offers</a>
+    <a class="item" href="#">List Your Product</a>
+    <a class="item" href="#">My Bookings</a>
+    <a class="item" href="#">Help &amp; Support</a>
+  </div>
+</div>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-banner">
+        <div class="hero-bg">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1800&q=75" alt="Furnished living room" onerror="this.onerror=null;this.src='https://picsum.photos/seed/rendzo-hero/1800/1000'">
+        </div>
+        <span class="hero-glow a"></span>
+        <span class="hero-glow b"></span>
+
+        <div class="hero-nav">
+          <button class="hero-arrow" aria-label="Previous slide"><svg width="16" height="16"><use href="#i-left"/></svg></button>
+          <div class="hero-dots"><span class="on"></span><span></span><span></span></div>
+          <button class="hero-arrow" aria-label="Next slide"><svg width="16" height="16"><use href="#i-right"/></svg></button>
+        </div>
+
+        <div class="hero-copy">
+          <span class="hero-eyebrow">Kochi's Rental Marketplace</span>
+          <h1>Everything You Need.<br><em>Nothing to Own.</em></h1>
+          <p>Premium furniture, appliances and electronics on flexible monthly rent. Free delivery, free pickup and a 100% refundable deposit.</p>
+          <div class="hero-cta">
+            <a class="btn btn-glow" href="#categories">Browse Products <svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-glass" href="#how">How It Works</a>
+          </div>
+          <div class="hero-stats">
+            <div><b><svg width="14" height="14"><use href="#i-star"/></svg> 4.8</b><span>Customer rating</span></div>
+            <div><b>2,000+</b><span>Happy renters</span></div>
+            <div><b>1–3 days</b><span>Free delivery</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-search">
+        <div class="hs-field">
+          <span class="ic"><svg width="18" height="18"><use href="#i-search"/></svg></span>
+          <div><small>What do you need?</small><b class="placeholder">Sofa, fridge, laptop…</b></div>
+        </div>
+        <div class="hs-field">
+          <span class="ic"><svg width="18" height="18"><use href="#i-cal"/></svg></span>
+          <div><small>Rental starts</small><b>Sat, 8 Nov 2026</b></div>
+        </div>
+        <div class="hs-field">
+          <span class="ic"><svg width="18" height="18"><use href="#i-cal"/></svg></span>
+          <div><small>Rental ends</small><b class="placeholder">Select date</b></div>
+        </div>
+        <a class="btn btn-primary" href="#">Find Rentals <svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="trust">
+    <div class="container trust-grid">
+      <div class="trust-item"><span class="ic"><svg width="20" height="20"><use href="#i-truck"/></svg></span><div><b>Free delivery &amp; pickup</b><span>Anywhere in Kochi</span></div></div>
+      <div class="trust-item"><span class="ic"><svg width="20" height="20"><use href="#i-shield"/></svg></span><div><b>100% refundable deposit</b><span>Returned after pickup</span></div></div>
+      <div class="trust-item"><span class="ic"><svg width="20" height="20"><use href="#i-cal"/></svg></span><div><b>Flexible rental dates</b><span>Extend anytime online</span></div></div>
+      <div class="trust-item"><span class="ic"><svg width="20" height="20"><use href="#i-check"/></svg></span><div><b>Verified products</b><span>Sanitised &amp; quality-checked</span></div></div>
+    </div>
+  </section>
+
+  <!-- Top categories -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-head">
+        <div><h2>Explore our Top Categories</h2><p>Everything for your home, office and daily life</p></div>
+        <a class="section-link" href="#">View all <svg width="14" height="14"><use href="#i-right"/></svg></a>
+      </div>
+      <div class="cat-grid">
+        <a class="cat-tile" href="#"><div class="img"><img src="assets/img/categories/packages.jpg" alt="Packages" loading="lazy"></div><div class="name">Packages</div></a>
+        <a class="cat-tile" href="#"><div class="img"><img src="assets/img/categories/water-purifiers.jpg" alt="Water Purifiers" loading="lazy"></div><div class="name">Water Purifiers</div></a>
+        <a class="cat-tile" href="#"><div class="img"><img src="assets/img/categories/beds.jpg" alt="Beds" loading="lazy"></div><div class="name">Beds</div></a>
+        <a class="cat-tile" href="#"><div class="img"><img src="assets/img/categories/sofas.png" alt="Sofas" loading="lazy"></div><div class="name">Sofas</div></a>
+        <a class="cat-tile" href="#"><div class="img"><img src="assets/img/categories/mattresses.png" alt="Mattresses" loading="lazy"></div><div class="name">Mattresses</div></a>
+        <a class="cat-tile" href="#"><div class="img"><img src="assets/img/categories/wardrobes.jpg" alt="Wardrobes" loading="lazy"></div><div class="name">Wardrobes</div></a>
+        <a class="cat-tile" href="#"><div class="img"><img src="assets/img/categories/refrigerators.png" alt="Refrigerators" loading="lazy"></div><div class="name">Refrigerators</div></a>
+        <a class="cat-tile" href="#"><div class="img"><img src="assets/img/categories/televisions.jpg" alt="Televisions" loading="lazy"></div><div class="name">Televisions</div></a>
+        <a class="cat-tile" href="#"><div class="img"><img src="assets/img/categories/washing-machines.png" alt="Washing Machines" loading="lazy"></div><div class="name">Washing Machines</div></a>
+        <a class="cat-tile" href="#"><div class="img"><img src="assets/img/categories/air-conditioners.png" alt="Air Conditioners" loading="lazy"></div><div class="name">Air Conditioners</div></a>
+        <a class="cat-tile" href="#"><div class="img"><img src="assets/img/categories/chairs.png" alt="Chairs & Stools" loading="lazy"></div><div class="name">Chairs &amp; Stools</div></a>
+        <a class="cat-tile" href="#"><div class="img"><img src="assets/img/categories/study-tables.jpg" alt="Study Tables" loading="lazy"></div><div class="name">Study Tables</div></a>
+        <a class="cat-tile" href="#"><div class="img"><img src="assets/img/categories/centre-tables.jpg" alt="Centre Tables" loading="lazy"></div><div class="name">Centre Tables</div></a>
+        <a class="cat-tile" href="#"><div class="img"><img src="assets/img/categories/bedside-tables.jpg" alt="Bedside Tables" loading="lazy"></div><div class="name">Bedside Tables</div></a>
+        <a class="cat-tile" href="#"><div class="img"><img src="assets/img/categories/laptops.png" alt="Laptops" loading="lazy"></div><div class="name">Laptops</div></a>
+      </div>
+      <div class="cat-more"><a class="btn btn-outline" href="#">View More Categories <svg width="14" height="14"><use href="#i-chev"/></svg></a></div>
+    </div>
+  </section>
+
+  <!-- Promo strip -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="promo">
+        <div class="promo-copy">
+          <span class="tag">RENDZO Home Plans</span>
+          <h3>Set up your entire home in one go</h3>
+          <p>Bed, wardrobe, sofa, fridge, washing machine and more, delivered together and installed by our team. Perfect for new movers to Kochi.</p>
+          <div class="price">Plans starting at <b>₹2,499</b> / month</div>
+          <div><a class="btn btn-primary" href="#">Explore Home Plans <svg width="16" height="16"><use href="#i-arrow"/></svg></a></div>
+        </div>
+        <div class="promo-media">
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1000&q=70" alt="Furnished bedroom" onerror="this.onerror=null;this.src='https://picsum.photos/seed/homeplan/1000/700'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- More categories -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head"><div><h2>More Categories</h2><p>Smaller things that make a house a home</p></div></div>
+      <div class="chip-grid">
+        <a class="chip" href="#"><span class="ic"><svg width="15" height="15"><use href="#i-grid"/></svg></span>TV Units</a>
+        <a class="chip" href="#"><span class="ic"><svg width="15" height="15"><use href="#i-grid"/></svg></span>Air Coolers</a>
+        <a class="chip" href="#"><span class="ic"><svg width="15" height="15"><use href="#i-grid"/></svg></span>Dishwashers</a>
+        <a class="chip" href="#"><span class="ic"><svg width="15" height="15"><use href="#i-grid"/></svg></span>Dressers</a>
+        <a class="chip" href="#"><span class="ic"><svg width="15" height="15"><use href="#i-grid"/></svg></span>Shoe Racks</a>
+        <a class="chip" href="#"><span class="ic"><svg width="15" height="15"><use href="#i-grid"/></svg></span>Dining Tables</a>
+        <a class="chip" href="#"><span class="ic"><svg width="15" height="15"><use href="#i-grid"/></svg></span>Bookshelves</a>
+        <a class="chip" href="#"><span class="ic"><svg width="15" height="15"><use href="#i-grid"/></svg></span>Fitness Equipment</a>
+        <a class="chip" href="#"><span class="ic"><svg width="15" height="15"><use href="#i-grid"/></svg></span>Microwaves</a>
+        <a class="chip" href="#"><span class="ic"><svg width="15" height="15"><use href="#i-grid"/></svg></span>Outdoor Products</a>
+        <a class="chip" href="#"><span class="ic"><svg width="15" height="15"><use href="#i-grid"/></svg></span>Bar Cabinets</a>
+        <a class="chip" href="#"><span class="ic"><svg width="15" height="15"><use href="#i-grid"/></svg></span>Air Purifiers</a>
+        <a class="chip" href="#"><span class="ic"><svg width="15" height="15"><use href="#i-grid"/></svg></span>Kitchen Appliances</a>
+        <a class="chip" href="#"><span class="ic"><svg width="15" height="15"><use href="#i-grid"/></svg></span>Baby &amp; Kids</a>
+        <a class="chip" href="#"><span class="ic"><svg width="15" height="15"><use href="#i-grid"/></svg></span>Smartphones</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest & Trending -->
+  <section class="section" style="background:var(--bg-soft)">
+    <div class="container">
+      <div class="section-head">
+        <div><h2>Latest &amp; Trending</h2><p>Most rented in Kochi this month</p></div>
+        <a class="section-link" href="#">Explore all <svg width="14" height="14"><use href="#i-right"/></svg></a>
+      </div>
+      <div class="carousel-wrap" data-carousel>
+        <button class="carousel-btn prev" aria-label="Previous"><svg width="18" height="18"><use href="#i-left"/></svg></button>
+        <button class="carousel-btn next" aria-label="Next"><svg width="18" height="18"><use href="#i-right"/></svg></button>
+        <div class="carousel">
+
+          <a class="card" href="#">
+            <div class="img"><span class="badge hot">Best Seller</span><button class="wish" aria-label="Add to wishlist"><svg width="16" height="16"><use href="#i-heart"/></svg></button><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=500&q=70" alt="Nova 3-Seater Fabric Sofa" onerror="this.onerror=null;this.src='https://picsum.photos/seed/p1/500/500'"></div>
+            <div class="body"><span class="delivery"><svg width="13" height="13"><use href="#i-truck"/></svg> Delivery in 1–3 days</span><h3>Nova 3-Seater Fabric Sofa</h3><div class="price-row"><div><small>Monthly rent</small><b>₹649<span>/mo</span></b></div><span class="strike">₹799</span></div><div class="actions"><span class="btn btn-ghost">Quick View</span><span class="btn btn-primary">Add to Cart</span></div></div>
+          </a>
+
+          <a class="card" href="#">
+            <div class="img"><span class="badge">Popular</span><button class="wish" aria-label="Add to wishlist"><svg width="16" height="16"><use href="#i-heart"/></svg></button><img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=500&q=70" alt="Fully Automatic Washing Machine 6.5 kg" onerror="this.onerror=null;this.src='https://picsum.photos/seed/p2/500/500'"></div>
+            <div class="body"><span class="delivery"><svg width="13" height="13"><use href="#i-truck"/></svg> Delivery in 1–3 days</span><h3>Fully Automatic Washing Machine 6.5 kg</h3><div class="price-row"><div><small>Monthly rent</small><b>₹686<span>/mo</span></b></div></div><div class="actions"><span class="btn btn-ghost">Quick View</span><span class="btn btn-primary">Add to Cart</span></div></div>
+          </a>
+
+          <a class="card" href="#">
+            <div class="img"><span class="badge new">New</span><button class="wish" aria-label="Add to wishlist"><svg width="16" height="16"><use href="#i-heart"/></svg></button><img src="https://images.unsplash.com/photo-1580480055273-228ff5388ef8?auto=format&fit=crop&w=500&q=70" alt="Alex Mesh Office Chair" onerror="this.onerror=null;this.src='https://picsum.photos/seed/p3/500/500'"></div>
+            <div class="body"><span class="delivery"><svg width="13" height="13"><use href="#i-truck"/></svg> Delivery in 1–3 days</span><h3>Alex Ergonomic Mesh Office Chair</h3><div class="price-row"><div><small>Monthly rent</small><b>₹249<span>/mo</span></b></div></div><div class="actions"><span class="btn btn-ghost">Quick View</span><span class="btn btn-primary">Add to Cart</span></div></div>
+          </a>
+
+          <a class="card" href="#">
+            <div class="img"><span class="badge">Popular</span><button class="wish" aria-label="Add to wishlist"><svg width="16" height="16"><use href="#i-heart"/></svg></button><img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=500&q=70" alt="Queen Foam Mattress" onerror="this.onerror=null;this.src='https://picsum.photos/seed/p4/500/500'"></div>
+            <div class="body"><span class="delivery"><svg width="13" height="13"><use href="#i-truck"/></svg> Delivery in 1–3 days</span><h3>Queen Size Foam Mattress (6 inch)</h3><div class="price-row"><div><small>Monthly rent</small><b>₹244<span>/mo</span></b></div></div><div class="actions"><span class="btn btn-ghost">Quick View</span><span class="btn btn-primary">Add to Cart</span></div></div>
+          </a>
+
+          <a class="card" href="#">
+            <div class="img"><span class="badge drop">Price Drop</span><button class="wish" aria-label="Add to wishlist"><svg width="16" height="16"><use href="#i-heart"/></svg></button><img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=500&q=70" alt="Double Door Refrigerator 260 L" onerror="this.onerror=null;this.src='https://picsum.photos/seed/p5/500/500'"></div>
+            <div class="body"><span class="delivery"><svg width="13" height="13"><use href="#i-truck"/></svg> Delivery in 1–3 days</span><h3>Double Door Refrigerator 260 L</h3><div class="price-row"><div><small>Monthly rent</small><b>₹899<span>/mo</span></b></div><span class="strike">₹1,049</span></div><div class="actions"><span class="btn btn-ghost">Quick View</span><span class="btn btn-primary">Add to Cart</span></div></div>
+          </a>
+
+          <a class="card" href="#">
+            <div class="img"><span class="badge hot">Best Seller</span><button class="wish" aria-label="Add to wishlist"><svg width="16" height="16"><use href="#i-heart"/></svg></button><img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=500&q=70" alt="Stuart Study Table" onerror="this.onerror=null;this.src='https://picsum.photos/seed/p6/500/500'"></div>
+            <div class="body"><span class="delivery"><svg width="13" height="13"><use href="#i-truck"/></svg> Delivery in 1–3 days</span><h3>Stuart Wooden Study Table (Walnut)</h3><div class="price-row"><div><small>Monthly rent</small><b>₹199<span>/mo</span></b></div></div><div class="actions"><span class="btn btn-ghost">Quick View</span><span class="btn btn-primary">Add to Cart</span></div></div>
+          </a>
+
+          <a class="card" href="#">
+            <div class="img"><button class="wish" aria-label="Add to wishlist"><svg width="16" height="16"><use href="#i-heart"/></svg></button><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=500&q=70" alt="43 inch Smart LED TV" onerror="this.onerror=null;this.src='https://picsum.photos/seed/p7/500/500'"></div>
+            <div class="body"><span class="delivery"><svg width="13" height="13"><use href="#i-truck"/></svg> Delivery in 2–4 days</span><h3>43" 4K Smart LED TV</h3><div class="price-row"><div><small>Monthly rent</small><b>₹749<span>/mo</span></b></div></div><div class="actions"><span class="btn btn-ghost">Quick View</span><span class="btn btn-primary">Add to Cart</span></div></div>
+          </a>
+
+          <a class="card" href="#">
+            <div class="img"><span class="badge new">New</span><button class="wish" aria-label="Add to wishlist"><svg width="16" height="16"><use href="#i-heart"/></svg></button><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=500&q=70" alt="Laptop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/p8/500/500'"></div>
+            <div class="body"><span class="delivery"><svg width="13" height="13"><use href="#i-truck"/></svg> Delivery in 1–3 days</span><h3>Core i5 Laptop 16 GB / 512 GB SSD</h3><div class="price-row"><div><small>Monthly rent</small><b>₹1,499<span>/mo</span></b></div></div><div class="actions"><span class="btn btn-ghost">Quick View</span><span class="btn btn-primary">Add to Cart</span></div></div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section class="section" id="packages">
+    <div class="container">
+      <div class="packages">
+        <div class="packages-copy">
+          <span class="hero-eyebrow">Checkout our Packages</span>
+          <h3>Set up a full home in one booking</h3>
+          <p>Ready-made bundles for bedrooms, living rooms and home offices. One delivery, one deposit, and up to 25% less than renting item by item.</p>
+          <ul class="packages-points">
+            <li><svg width="16" height="16"><use href="#i-check"/></svg> Swap any item in a package before checkout</li>
+            <li><svg width="16" height="16"><use href="#i-check"/></svg> Free delivery, installation and pickup</li>
+            <li><svg width="16" height="16"><use href="#i-check"/></svg> Single refundable deposit for the whole set</li>
+          </ul>
+          <div class="packages-cta">
+            <a class="btn btn-glow" href="#">Explore all packages <svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+            <span class="packages-from">Starting from <b>₹257</b>/month</span>
+          </div>
+        </div>
+
+        <div class="packages-cards">
+          <a class="pkg" href="#">
+            <span class="pkg-badge">Most popular</span>
+            <div class="pkg-thumbs">
+              <span><img src="assets/img/categories/beds.jpg" alt="" loading="lazy"></span>
+              <span><img src="assets/img/categories/wardrobes.jpg" alt="" loading="lazy"></span>
+              <span><img src="assets/img/categories/refrigerators.png" alt="" loading="lazy"></span>
+            </div>
+            <h4>1 BHK Package</h4>
+            <p>Bed, mattress, wardrobe, fridge, 3-seater sofa</p>
+            <div class="pkg-foot">
+              <div><small>Monthly rent</small><b>₹1,899<span>/mo</span></b></div>
+              <span class="pkg-save">Save 22%</span>
+            </div>
+          </a>
+          <a class="pkg" href="#">
+            <div class="pkg-thumbs">
+              <span><img src="assets/img/categories/sofas.png" alt="" loading="lazy"></span>
+              <span><img src="assets/img/categories/televisions.jpg" alt="" loading="lazy"></span>
+              <span><img src="assets/img/categories/washing-machines.png" alt="" loading="lazy"></span>
+            </div>
+            <h4>2 BHK Package</h4>
+            <p>2 beds, sofa, TV, fridge, washing machine, dining</p>
+            <div class="pkg-foot">
+              <div><small>Monthly rent</small><b>₹3,499<span>/mo</span></b></div>
+              <span class="pkg-save">Save 25%</span>
+            </div>
+          </a>
+          <a class="pkg" href="#">
+            <div class="pkg-thumbs">
+              <span><img src="assets/img/categories/study-tables.jpg" alt="" loading="lazy"></span>
+              <span><img src="assets/img/categories/chairs.png" alt="" loading="lazy"></span>
+              <span><img src="assets/img/categories/laptops.png" alt="" loading="lazy"></span>
+            </div>
+            <h4>Work From Home</h4>
+            <p>Study table, ergonomic chair, laptop, desk lamp</p>
+            <div class="pkg-foot">
+              <div><small>Monthly rent</small><b>₹1,299<span>/mo</span></b></div>
+              <span class="pkg-save">Save 18%</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section" id="how" style="padding-top:0">
+    <div class="container">
+      <div class="section-head"><div><h2>How RENDZO works</h2><p>Four simple steps from browsing to pickup</p></div></div>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><h4>Pick your product &amp; dates</h4><p>Choose what you need and select rental start and end dates. See the full price and refundable deposit upfront.</p></div>
+        <div class="step"><div class="num">2</div><h4>Book &amp; pay online</h4><p>Pay securely via UPI, cards or net banking. You get a unique booking ID and confirmation instantly.</p></div>
+        <div class="step"><div class="num">3</div><h4>We deliver &amp; install</h4><p>Our team delivers to your doorstep in Kochi within 1–3 days and sets everything up for free.</p></div>
+        <div class="step"><div class="num">4</div><h4>Extend or return</h4><p>Extend your rental in one tap, or schedule a free pickup. Your deposit is refunded after return.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Owner CTA -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="owner-cta">
+        <div class="copy">
+          <span class="section-link" style="font-size:12px;text-transform:uppercase;letter-spacing:.1em">For product owners</span>
+          <h3>Have products lying idle? Earn with RENDZO.</h3>
+          <p>List your furniture, appliances or gadgets on RENDZO. We handle customers, delivery, pickup and payments. You earn every month.</p>
+          <ul>
+            <li><svg width="16" height="16"><use href="#i-check"/></svg> Free listing, approved by the RENDZO team</li>
+            <li><svg width="16" height="16"><use href="#i-check"/></svg> Monthly payouts with transparent commission</li>
+            <li><svg width="16" height="16"><use href="#i-check"/></svg> Damage protection on every rental</li>
+          </ul>
+          <div><a class="btn btn-primary" href="#">Become an Owner <svg width="16" height="16"><use href="#i-arrow"/></svg></a></div>
+        </div>
+        <div class="media">
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1000&q=70" alt="Furniture ready to list" onerror="this.onerror=null;this.src='https://picsum.photos/seed/owner/1000/700'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" style="background:var(--bg-soft)">
+    <div class="container">
+      <div class="section-head"><div><h2>Loved by renters in Kochi</h2><p>Real feedback from our customers</p></div></div>
+      <div class="testi-grid">
+        <div class="testi">
+          <div class="stars"><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg></div>
+          <p>"Moved to Kakkanad for a 6-month project and rented a bed, fridge and washing machine. Delivered in two days, picked up the day I left. Zero hassle."</p>
+          <div class="who"><span class="av">AR</span><div><b>Arjun R.</b><span>Kakkanad, Kochi</span></div></div>
+        </div>
+        <div class="testi">
+          <div class="stars"><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg></div>
+          <p>"The deposit came back to my account within three days of pickup. Products were clean and exactly like the photos. Will rent again."</p>
+          <div class="who"><span class="av">SN</span><div><b>Sneha N.</b><span>Edappally, Kochi</span></div></div>
+        </div>
+        <div class="testi">
+          <div class="stars"><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg></div>
+          <p>"Extended my AC rental twice over WhatsApp. Support replied within minutes each time. Much cheaper than buying for a short stay."</p>
+          <div class="who"><span class="av">MJ</span><div><b>Mathew J.</b><span>Panampilly Nagar, Kochi</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App banner -->
+  <section class="section">
+    <div class="container">
+      <div class="app-banner">
+        <div>
+          <h3>Get the RENDZO app</h3>
+          <p>Track deliveries, extend rentals and manage deposits on the go.</p>
+        </div>
+        <div class="store-badges">
+          <a class="store" href="#"><svg width="24" height="24"><use href="#i-apple"/></svg><span>Download on the<b>App Store</b></span></a>
+          <a class="store" href="#"><svg width="22" height="22"><use href="#i-play"/></svg><span>Get it on<b>Google Play</b></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="#"><span class="logo-mark">R</span><span class="logo-name">RENDZO</span></a>
+        <p>Everything You Need. Nothing to Own. Kochi's rental marketplace for furniture, appliances and electronics.</p>
+        <div class="help" style="margin-top:16px"><span class="ic"><svg width="16" height="16"><use href="#i-pin"/></svg></span><span>Kochi, Kerala, India</span></div>
+      </div>
+      <div>
+        <h4>RENDZO</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">List Your Product</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Information</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Documents Required</a></li>
+          <li><a href="#">Delivery Areas</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="#">Rental Terms &amp; Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cancellation Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Need Help?</h4>
+        <div class="help"><span class="ic"><svg width="16" height="16"><use href="#i-mail"/></svg></span><a href="#">hello@rendzo.in</a></div>
+        <div class="help"><span class="ic"><svg width="16" height="16"><use href="#i-phone"/></svg></span><a href="#">+91 98765 43210</a></div>
+        <div class="help"><span class="ic" style="background:#25d366"><svg width="16" height="16"><use href="#i-wa"/></svg></span><a href="#">Chat on WhatsApp</a></div>
+        <h4 style="margin-top:20px">Download App</h4>
+        <div class="store-badges">
+          <a class="store" href="#" style="min-width:0;padding:7px 10px"><svg width="18" height="18"><use href="#i-apple"/></svg><b style="font-size:12px">App Store</b></a>
+          <a class="store" href="#" style="min-width:0;padding:7px 10px"><svg width="17" height="17"><use href="#i-play"/></svg><b style="font-size:12px">Google Play</b></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 RENDZO. All rights reserved.</span>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><svg width="15" height="15"><use href="#i-fb"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="15" height="15"><use href="#i-ig"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg width="15" height="15"><use href="#i-yt"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg width="15" height="15"><use href="#i-li"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="#" aria-label="Chat on WhatsApp"><svg width="28" height="28"><use href="#i-wa"/></svg></a>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
