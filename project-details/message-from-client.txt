@@ -1,0 +1,78 @@
+PROJECT: RENDZO Rental Website MVP
+
+TAGLINE: Everything You Need. Nothing to Own.
+
+LOCATION: Kochi, Kerala, India
+
+BUDGET: ₹15,000–₹40,000
+
+Project Objective
+
+Develop a mobile-friendly rental website where customers can browse products, select rental periods, check availability, book online, make payments and arrange delivery and pickup.
+
+RENDZO will manage customer service and logistics.
+
+The platform must support two inventory sources:
+
+1. Products owned by RENDZO.
+2. Products listed by third-party owners and approved by the RENDZO admin.
+
+Required Features
+
+1. Responsive homepage and product catalogue.
+2. Product categories, search and filtering.
+3. Product details, rental pricing and deposits.
+4. Rental date selection and availability checking.
+5. Online booking and payment gateway integration.
+6. Unique booking IDs and booking confirmations.
+7. Customer accounts and booking history.
+8. Admin dashboard.
+9. Product and inventory management.
+10. Booking and payment management.
+11. Delivery and pickup scheduling.
+12. Rental extensions and overdue tracking.
+13. Third-party owner registration and product submissions.
+14. Admin approval of owners and listings.
+15. Owner commission and payout records.
+16. Customer support and WhatsApp integration.
+17. Email notifications.
+18. Terms, privacy, cancellation and refund policy pages.
+19. Basic SEO, analytics and website backups.
+
+Important Business Rules
+
+- Prevent overlapping confirmed bookings for the same physical product.
+- Clearly show all rental charges before payment.
+- Record refundable deposits separately from rental revenue.
+- Verify payment status on the server.
+- Require admin approval before third-party products become publicly available.
+- Record product ownership, condition, maintenance and booking history.
+- Allow manual management of delivery and pickup assignments.
+- Keep a record of booking-status changes and financial transactions.
+
+Preferred Development Approach
+
+Use a maintainable e-commerce platform with a proven rental-booking solution wherever possible.
+
+Avoid building complex features from scratch unless necessary.
+
+Handover Requirements
+
+Provide:
+
+- Fully working website.
+- Admin login.
+- Domain and hosting access.
+- Source code and configuration files as agreed.
+- Payment-gateway integration documentation.
+- Backup and recovery instructions.
+- Basic SEO setup.
+- Website administration training.
+- Testing report.
+- List of recurring costs and plugin licences.
+
+Acceptance Criteria
+
+The website will be considered ready only after successful testing of a complete customer booking, a failed payment, a rental return, an overlapping-booking attempt and a third-party product approval.
+
+Please provide a fixed quotation, delivery timeline, technology stack, recurring costs and a list of features included within the agreed budget before development begins.
